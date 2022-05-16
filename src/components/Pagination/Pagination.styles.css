@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    --bs-pagination-color: #fff;
+    --bs-pagination-bg: none;
+    --bs-pagination-border-width: none;
+    --bs-pagination-hover-bg: #062226;
+    --bs-pagination-active-bg: #062226;
+}
+
+.page-item {
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.page-item:hover {
+    background-color: #062226;
+}
+
+.page-link {
+    text-decoration: none;
+}
+
+.page-link.hover {
+    background-color: #062226;
+}

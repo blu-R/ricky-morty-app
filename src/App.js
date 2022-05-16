@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useEffect, useState } from "react";
+import Location from "./components/Location/Location";
+import banner from "./assets/images/banner.svg";
+import title from "./assets/images/title.svg";
 
+import "./App.css";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header>
+                <img className="title" src={title} alt="" />
+                <img src={banner} alt="" />
+            </header>
+
+            <Location />
+        </div>
+    );
 }
 
 export default App;
